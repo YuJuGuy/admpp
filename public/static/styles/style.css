@@ -68,10 +68,14 @@ body, html {
     filter: brightness(0);
 }
 
+.svg-container img, .social-icons img {
+    filter: brightness(0) invert(1) !important;
+    transition: filter 0.3s ease-in-out;
 
+}
 
-.navbar .svg-container img, .navbar-toggler {
-    transition: filter 0.5s;
+.navbar.scrolled .svg-container img, .navbar.scrolled .social-icons img {
+    filter: none !important;
 }
 
 
@@ -82,13 +86,17 @@ header {
 
 /* Navbar link styling */
 .nav-link {
-    color: rgb(6, 123, 173) !important; /* Set link color to white */
+    color: #fff !important ; /* Change link color to white */ 
     text-decoration: none !important; /* Remove underline */
     transition: color 0.3s ease-in-out; /* Add transition effect */
 }
+.navbar.scrolled .nav-link{
+    color: #067BAD !important; /* Change link color to black on scroll */
+
+}
 @media (max-width: 991px) {
     .nav-link {
-        color: black; /* Change link color to black on mobile */
+        color: #067BAD !important; /* Change link color to black on mobile */
         text-align: center;
         justify-content: center !important;
     }
@@ -810,7 +818,7 @@ ul {
   background-color: #ddd;
 }
 
-.banner {
+.blogbanner {
   width: 100%;
   background-image: url("/static/banner/blogbanner.jpg");
   min-height: 80%;
@@ -861,4 +869,20 @@ ul {
   50% {
       opacity: 0;
   }
+}
+
+
+.locationbanner {
+  width: 100%;
+  background-image: url("/static/banner/location.png");
+  min-height: 80%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px; /* Add padding for spacing from bottom */
 }

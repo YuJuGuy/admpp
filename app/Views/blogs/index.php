@@ -6,7 +6,7 @@
     <title>المدونة</title>
 </head>
 <body>
-<div class="banner">
+<div class="blogbanner">
         <div class="scroll_down">
             اسحب للأسفل
         </div>
