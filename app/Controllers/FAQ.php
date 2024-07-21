@@ -50,9 +50,9 @@ class FAQ extends BaseController
         $faqData[$category][] = $faq;
     }
 
-    return view('templates/header')
+    return view('pagetemplates/header')
         . view('faq/index', ['faqData' => $faqData])
-        . view('templates/footer');
+        . view('pagetemplates/footer');
 }
 
 }

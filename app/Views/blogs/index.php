@@ -6,11 +6,12 @@
     <title>المدونة</title>
 </head>
 <body>
-<div class="blogbanner">
-        <div class="scroll_down">
-            اسحب للأسفل
-        </div>
+<div id="blogbanner" class="blogbanner">
+    <img data-aos="flip-up" data-aos-duration="1000" class="blogtext" src="<?= base_url('/static/banner/blogtext.png'); ?>" alt="blog">
+    <div class="scroll_down">
+        اسحب للأسفل
     </div>
+</div>
     <div class="content-container">
         <?php if (!empty($blogs_list)): ?>
             <div class="blogscontainer">
@@ -61,6 +62,34 @@
     </div>
 
     <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Preload the image for the banner
+        const banner = document.getElementById('blogbanner');
+        const img = new Image();
+        img.src = "/static/banner/blog.png";
+        img.onload = function() {
+            banner.style.backgroundImage = `url('${img.src}')`;
+            banner.classList.add('show-banner'); // Show the banner with transition
+        };
+
+        const items = document.querySelectorAll('.accordion button');
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            items.forEach(item => {
+                item.setAttribute('aria-expanded', 'false');
+                item.nextElementSibling.classList.remove('show');
+            });
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+                this.nextElementSibling.classList.add('show');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
         // Add the active class to the current page link
         const links = document.querySelectorAll('.pagination a');
         links.forEach(link => {
@@ -69,6 +98,7 @@
             }
         });
         AOS.init();
-    </script>
+    });
+</script>
 </body>
 </html>

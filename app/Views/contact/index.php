@@ -10,6 +10,11 @@
 <div id="responseMessage" class="message" style="display:none;"></div>
 
 <div class="locationbanner">
+    <div class="contact-title">
+        <h1>خلينا على تواصل</h1>
+        <p>ابقَ على اتصال دائم معنا، وسنكون هنا لتلبية <br />جميع احتياجاتك بكل سرعة وسهولة.</p>
+    </div>
+
     <img src="<?= base_url('/static/banner/location.png'); ?>" alt="contact us">
 </div>
 <div data-aos="zoom-out-up" class="contact-container">

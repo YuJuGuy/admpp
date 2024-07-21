@@ -277,7 +277,7 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        محتوى الجواب للسؤال 1.
+                    تبدا الكمية من  500 حبة .
                     </div>
                 </div>
             </div>
@@ -289,7 +289,7 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        محتوى الجواب للسؤال 2.
+                    مدة الطلب تستغرق من 15 الى 25 يوم  - ويعتمد على حسب نوع  العمل .
                     </div>
                 </div>
             </div>
@@ -301,7 +301,7 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        محتوى الجواب للسؤال.
+                    التحويل , الدفع النقدي , الدفع عبر البطاقات الإئتمانية 
                     </div>
                 </div>
             </div>
@@ -313,7 +313,8 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        محتوى الجواب للسؤال 4.
+                    نعم متوفر ، التوصيل داخل الرياض متوفر ومجاني للعملاء
+                    اما خارج الرياض يكون عن طريق شركات الشحن يتم احتسابها التكلفة على العميل
                     </div>
                 </div>
             </div>
@@ -325,7 +326,7 @@
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        محتوى الجواب للسؤال 5.
+                    نعم ، يتم توفير عينة مقاس تكون باللون ( الأبيض ) للعميل بحسب الخامة والمقاس المطلوب من العميل
                     </div>
                 </div>
             </div>

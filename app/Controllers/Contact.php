@@ -11,9 +11,9 @@ class Contact extends BaseController
     {
         $data['title'] = 'Contact Us';
 
-        return view('templates/header', $data)
+        return view('pagetemplates/header', $data)
             . view('contact/index')
-            . view('templates/footer');
+            . view('pagetemplates/footer');
     }
 
     public function submit()
@@ -30,9 +30,9 @@ class Contact extends BaseController
         ]);
 
         if ($validation->withRequest($this->request)->run() == FALSE) {
-            return view('templates/header', ['title' => 'Contact Us'])
+            return view('pagetemplates/header', ['title' => 'Contact Us'])
                 . view('contact/index', ['validation' => $validation])
-                . view('templates/footer');
+                . view('pagetemplates/footer');
         } else {
             $name = $this->request->getPost('name');
             $message = $this->request->getPost('message');
@@ -97,9 +97,9 @@ $contact_info
                 }
             }
 
-            return view('templates/header', ['title' => 'Contact Us'])
+            return view('pagetemplates/header', ['title' => 'Contact Us'])
                 . view('contact/index', $data)
-                . view('templates/footer');
+                . view('pagetemplates/footer');
         }
     }
 }

@@ -25,9 +25,9 @@ class Blogs extends BaseController
 
         $data['title'] = 'blogs archive';
 
-        return view('templates/header', $data)
+        return view('pagetemplates/header', $data)
             . view('blogs/index')
-            . view('templates/footer');
+            . view('pagetemplates/footer');
     }
 
     public function show(?string $id = null)
@@ -42,8 +42,8 @@ class Blogs extends BaseController
 
         $data['title'] = $data['blogs']['title'];
 
-        return view('templates/header', $data)
+        return view('pagetemplates/header', $data)
             . view('blogs/view')
-            . view('templates/footer');
+            . view('pagetemplates/footer');
     }
 }
