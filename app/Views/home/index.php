@@ -181,7 +181,7 @@
 </div>
 </div>
 
-<div data-aos="zoom-in-up" class="sixthpanel" id= "ourworks" >
+<div data-aos="zoom-in-up" class="sixthpanel" id="ourworks">
     <div class="wrapper">
         <div class="title pt-4">
             <h1>أعمـــالنا :</h1>
@@ -189,26 +189,38 @@
         </div>
         <div class="ourworks_grid">
             <ul class="left">
-            <li>
-            <img src= <?= base_url('/static/our-works/1.jpg'); ?> class="lazyload" alt="">
-            </li>
-            <li>
-            <img src= <?= base_url('/static/our-works/2.png'); ?> class="lazyload" alt="">
-            </li>
-            <li>
-            <img src= <?= base_url('/static/our-works/3.jpg'); ?> class="lazyload" alt="">
-            </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/1.jpg'); ?>" data-lightbox="our-works" data-title="Image 1">
+                        <img src="<?= base_url('/static/our-works/1.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/2.png'); ?>" data-lightbox="our-works" data-title="Image 2">
+                        <img src="<?= base_url('/static/our-works/2.png'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/3.jpg'); ?>" data-lightbox="our-works" data-title="Image 3">
+                        <img src="<?= base_url('/static/our-works/3.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
             </ul>
             <ul class="right">
-            <li>
-            <img src= <?= base_url('/static/our-works/4.jpg'); ?> class="lazyload" alt="">
-            </li>
-            <li>
-            <img src= <?= base_url('/static/our-works/5.jpg'); ?> class="lazyload" alt="">
-            </li>
-            <li>
-            <img src= <?= base_url('/static/our-works/6.jpg'); ?> class="lazyload" alt="">
-            </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/4.jpg'); ?>" data-lightbox="our-works" data-title="Image 4">
+                        <img src="<?= base_url('/static/our-works/4.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/5.jpg'); ?>" data-lightbox="our-works" data-title="Image 5">
+                        <img src="<?= base_url('/static/our-works/5.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/6.jpg'); ?>" data-lightbox="our-works" data-title="Image 6">
+                        <img src="<?= base_url('/static/our-works/6.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="button-container">
@@ -217,23 +229,34 @@
     </div>
 </div>
 
+
 <div data-aos="fade-down" class="seventpanel">
     <div class="title pt-4" style="text-align: center;">
         <h1>شركاؤنا</h1>
     </div>
     <ul class="partners">
-    <li><img data-src= <?= base_url('/static/partners/1.png'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/2.png'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/3.png'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/4.jpg'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/5.png'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/6.png'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/7.png'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/8.png'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/9.jpg'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/10.jpeg'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/11.png'); ?> class="lazyload" alt=""></li>
-    <li><img data-src= <?= base_url('/static/partners/12.png'); ?> class="lazyload" alt=""></li>
+    <?php
+    $partners = [
+        '/static/partners/1.png',
+        '/static/partners/2.png',
+        '/static/partners/3.png',
+        '/static/partners/4.jpg',
+        '/static/partners/5.png',
+        '/static/partners/6.png',
+        '/static/partners/7.png',
+        '/static/partners/8.png',
+        '/static/partners/9.jpg',
+        '/static/partners/10.jpeg',
+        '/static/partners/11.png',
+        '/static/partners/12.png'
+    ];
+    ?>
+
+    <ul class="partners">
+        <?php foreach ($partners as $partner): ?>
+            <li><img data-src="<?= base_url($partner); ?>" class="lazyload" alt=""></li>
+        <?php endforeach; ?>
+    </ul>
     </ul>
 </div>
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="<?= base_url('/static/styles/style.css'); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -43,7 +44,7 @@
                                 <a class="nav-link" href="#">طلب تسعير</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">الاسئلة الشائعة</a>
+                                <a class="nav-link" href=<?= base_url('/faq');?>>الاسئلة الشائعة</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href=<?= base_url('/contact');?>>تواصل معنا</a>
@@ -81,12 +82,13 @@
                 <a class="nav-link"  href="#">عن الشركة</a>
                 <a class="nav-link" href=<?= base_url('/blogs'); ?>>المدونة</a>
                 <a class="nav-link" href="#">طلب تسعير</a>
-                <a class="nav-link"  href="#">الاسئلة الشائعة</a>
+                <a class="nav-link"  href=<?= base_url('/faq');?>>الاسئلة الشائعة</a>
                 <a class="nav-link" href=<?= base_url('/contact');?>>تواصل معنا</a>
 
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

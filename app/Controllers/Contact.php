@@ -42,22 +42,29 @@ class Contact extends BaseController
 
             if ($contact_method == 'whatsapp') {
                 // Prepare data for POST request
-                $chatId = '966562243082@c.us';
+                $chatId = '120363296639205911@g.us';
                 $text = 
                 
 "وصلتك رسالة من 
-$name 
+*$name*
 
 صاحب الرقم 
 $contact_info
 
 الرسالة 
-$message";
+*$message*
+
+
+عميل جديد محتمل 😉🤑
+عجل بالرد عشان ما يروح عليك العميل
+";
+
+
 
                 $postData = [
                     "chatId" => $chatId,
                     "text" => $text,
-                    "session" => "Joe"
+                    "session" => "Madhi"
                 ];
 
                 // Send POST request to custom API
