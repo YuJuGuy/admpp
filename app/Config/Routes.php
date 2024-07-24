@@ -4,7 +4,8 @@ use CodeIgniter\Router\RouteCollection;
 use App\Controllers\Blogs; // Add this line
 use App\Controllers\Contact; // Add this line
 use App\Controllers\FAQ; // Add this line
-
+use App\Controllers\Home;
+use App\Controllers\Pages;
 
 /**
  * @var RouteCollection $routes
@@ -16,3 +17,4 @@ $routes->get('blogs/(:segment)', [Blogs::class, 'show']); // Add this line
 $routes->get('contact', [Contact::class, 'index']);
 
 $routes->post('contact/submit', [Contact::class, 'submit']);
+$routes->get('(:segment)', 'Pages::view/$1');

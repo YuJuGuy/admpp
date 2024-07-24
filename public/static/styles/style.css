@@ -160,7 +160,6 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    border: 2px solid #ddd;
     background-color: #fff;
 
 }
@@ -208,7 +207,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .progress-container {
-        margin-top: 20px;
+        bottom: 40px;
         position: relative;
         display: flex;
         width: 100%;
@@ -924,7 +923,8 @@ ul {
 
 @media screen and (max-width: 824px) {
   .contact-title {
-      left: 10%;
+      text-align: center;
+      left: 30%;
       top: 5%;
   }
   .contact-title h1{
@@ -954,7 +954,7 @@ ul {
   position: relative;
   z-index: 10;
 }
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 992px) {
   .contact-container {
       position: relative;
       display: flex;
@@ -1046,6 +1046,8 @@ ul {
 }
 .info p{
   font-weight: bold;
+  list-style: none;
+  color: white !important;
   margin: 0 !important;
 }
 .social-icons-contact {
@@ -1139,7 +1141,7 @@ ul {
   left: 9px;
   width: 2px;
   height: 10px;
-  background: blue;
+  background: #03b5d2;
 }
 .accordion button[aria-expanded='true'] {
   color: #03b5d2;
@@ -1176,8 +1178,12 @@ font-weight: bold;
 .categorytitle{
 display: flex;
 flex-direction: row; 
-gap:10px;
+gap:20px;
 font-size: xx-large;
+}
+
+.categorytitle i {
+  color:#067BAD;
 }
 
 .contact-us{

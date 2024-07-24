@@ -13,10 +13,11 @@
     <div class="containerFAQ">
         <?php foreach ($faqData as $category => $faqs): ?>
             <div class = "categorytitle">
-            <h2><?php echo htmlspecialchars($category); ?></h2>
             <?php if (!empty($faqs[0]['icon'])): ?>
             <?php echo $faqs[0]['icon']; ?>
             <?php endif; ?>
+            <h2><?php echo htmlspecialchars($category); ?></h2>
+
         </div>
             <div class="accordion">
                 <?php foreach ($faqs as $index => $faq): ?>

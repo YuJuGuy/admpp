@@ -50,7 +50,6 @@
                 </div>
                 <div class="info">
                 <i class="fa-solid fa-phone"></i>
-
                     <p>0506262962</p>
                 </div>
                 <div class="info">

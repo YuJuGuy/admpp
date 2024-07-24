@@ -7,18 +7,19 @@
 <div class = "firstpanel">
 <div class="slideshow-container">
 
-    <div class="slides">
-        <img src=<?= base_url('/static/banner/1.png'); ?> alt="Slide 1">
-    </div>
-    <div class="slides">
-        <img src=<?= base_url('/static/banner/1.png'); ?> alt="Slide 2">
-    </div>
-    <div class="slides">
-        <img src=<?= base_url('/static/banner/1.png'); ?> alt="Slide 3">
-    </div>
-    <div class="slides">
-        <img src=<?= base_url('/static/banner/1.png'); ?> alt="Slide 4">
-    </div>
+<div class="slides">
+    <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('/static/banner/1_phone.png'); ?>" alt="Slide 1">
+</div>
+<div class="slides">
+    <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('static/banner/1_phone.png'); ?>" alt="Slide 2">
+</div>
+<div class="slides">
+    <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('static/banner/1_phone.png'); ?>" alt="Slide 3">
+</div>
+<div class="slides">
+    <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('/static/banner/1_phone.png'); ?>" alt="Slide 4">
+</div>
+
     <div class="progress-container">
 
         <div class="progress-bar-wrapper">
@@ -26,7 +27,7 @@
                 <div class="progress-bar-fill" id="progressBar1"></div>
             </div>
             <div class="progress-bar-text">
-                <p>Progress Bar 1</p>
+                <p>الاعلانات</p>
             </div>
         </div>
 
@@ -35,7 +36,7 @@
                 <div class="progress-bar-fill" id="progressBar2"></div>
             </div>
             <div class="progress-bar-text">
-                <p>Progress Bar 2</p>
+                <p>الاكياس</p>
             </div>
         </div>
 
@@ -44,7 +45,7 @@
                 <div class="progress-bar-fill" id="progressBar3"></div>
             </div>
             <div class="progress-bar-text">
-                <p>Progress Bar 3</p>
+                <p>التخفيضات</p>
             </div>
         </div>
 
@@ -53,7 +54,7 @@
                 <div class="progress-bar-fill" id="progressBar4"></div>
             </div>
             <div class="progress-bar-text">
-                <p>Progress Bar 4</p>
+                <p>العروض</p>
             </div>
         </div>
     </div>
@@ -407,7 +408,17 @@
             once: true // Whether animation should happen only once - while scrolling down
             });
 
-  
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll('.slides img');
+    const isPhone = window.matchMedia("(max-width: 768px)").matches;
+
+    slides.forEach(img => {
+        const phoneSrc = img.getAttribute('data-src-phone');
+        if (isPhone && phoneSrc) {
+            img.setAttribute('src', phoneSrc);
+        }
+    });
+});  
 
 </script>
 
