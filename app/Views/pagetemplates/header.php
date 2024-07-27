@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="<?= base_url('/static/styles/style.css'); ?>">
     <link href="<?= base_url('/static/lightbox/css/lightbox.css'); ?>" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -35,7 +39,7 @@
                                 <a class="nav-link" href="#">اعمالنا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">عن الشركة</a>
+                            <a class="nav-link" href=<?= base_url('/about'); ?>>عن الشركة</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href=<?= base_url('/blogs'); ?>>المدونة</a>
@@ -79,7 +83,7 @@
                 <a class="nav-link" href=<?= base_url('/'); ?>>الصفحة الرئيسية</a>
                 <a class="nav-link" href="#">منتجاتنا</a>
                 <a class="nav-link" href="#">اعمالنا</a>
-                <a class="nav-link"  href="#">عن الشركة</a>
+                <a class="nav-link" href=<?= base_url('/about'); ?>>عن الشركة</a>
                 <a class="nav-link" href=<?= base_url('/blogs'); ?>>المدونة</a>
                 <a class="nav-link" href="#">طلب تسعير</a>
                 <a class="nav-link"  href=<?= base_url('/faq');?>>الاسئلة الشائعة</a>

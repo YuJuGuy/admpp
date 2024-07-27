@@ -269,69 +269,57 @@
         </div>
     </div>
     <div class="question-accordion">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    ماهي اقل الكمية للطلب؟
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    تبدا الكمية من  500 حبة .
+            <div class="accordion">
+                    <div class="accordion-item" style="border-bottom: 1px solid #e5e5e5 !important;">
+                        <button id="accordion-button" aria-expanded="false">
+                            <span class="accordion-title">ماهي اقل الكمية للطلب؟</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>تبدا الكمية من  500 حبة .</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    كم تستغرق مدة الطلب للعمل؟
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    مدة الطلب تستغرق من 15 الى 25 يوم  - ويعتمد على حسب نوع  العمل .
+                    <div class="accordion-item" style="border-bottom: 1px solid #e5e5e5 !important;">
+                        <button id="accordion-button" aria-expanded="false">
+                            <span class="accordion-title">كم تستغرق مدة الطلب للعمل؟</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>مدة الطلب تستغرق من 15 الى 25 يوم  - ويعتمد على حسب نوع  العمل .</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    ما هي طرق الدفع؟
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    التحويل , الدفع النقدي , الدفع عبر البطاقات الإئتمانية 
+                    <div class="accordion-item" style="border-bottom: 1px solid #e5e5e5 !important;">
+                        <button id="accordion-button" aria-expanded="false">
+                            <span class="accordion-title">ما هي طرق الدفع؟</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>التحويل , الدفع النقدي , الدفع عبر البطاقات الإئتمانية</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    هل يوجد خدمات الشحن والتوصيل؟
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    نعم متوفر ، التوصيل داخل الرياض متوفر ومجاني للعملاء
-                    اما خارج الرياض يكون عن طريق شركات الشحن يتم احتسابها التكلفة على العميل
+                    <div class="accordion-item" style="border-bottom: 1px solid #e5e5e5 !important;">
+                        <button id="accordion-button" aria-expanded="false">
+                            <span class="accordion-title">هل يوجد خدمات الشحن والتوصيل؟</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>نعم متوفر ، التوصيل داخل الرياض متوفر ومجاني للعملاء
+                            اما خارج الرياض يكون عن طريق شركات الشحن يتم احتسابها التكلفة على العميل</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        الهل يمكنكم توفير عينة ( مقاس ) قبل الطباعة؟
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    نعم ، يتم توفير عينة مقاس تكون باللون ( الأبيض ) للعميل بحسب الخامة والمقاس المطلوب من العميل
+                    <div class="accordion-item" style="border-bottom: 1px solid #e5e5e5 !important;">
+                        <button id="accordion-button" aria-expanded="false">
+                            <span class="accordion-title">هل يمكنكم توفير عينة ( مقاس ) قبل الطباعة؟</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>نعم ، يتم توفير عينة مقاس تكون باللون ( الأبيض ) للعميل بحسب الخامة والمقاس المطلوب من العميل</p>
+                        </div>
                     </div>
-                </div>
             </div>
-        </div>
+       
+
+
     </div>
 </div>
 <script>
@@ -419,6 +407,29 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });  
+
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+    
+    for (let i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+        const contentParagraph = items[i].nextElementSibling.querySelector('p');
+        contentParagraph.style.animation = ''; // Reset animation
+    }
+    
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+        const contentParagraph = this.nextElementSibling.querySelector('p');
+        contentParagraph.style.animation = 'slideInUp .75s'; // Add animation
+        
+        // Force reflow to restart animation
+        void contentParagraph.offsetWidth;
+    }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 </script>
 
