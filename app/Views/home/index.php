@@ -4,20 +4,20 @@
 <body>
 
 
-<div class = "firstpanel">
+<div class = "slideshowpanel">
 <div class="slideshow-container">
 
 <div class="slides">
     <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('/static/banner/1_phone.png'); ?>" alt="Slide 1">
 </div>
 <div class="slides">
-    <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('static/banner/1_phone.png'); ?>" alt="Slide 2">
+    <img src="<?= base_url('/static/banner/2.png'); ?>" data-src-phone="<?= base_url('static/banner/2.png'); ?>" alt="Slide 2">
 </div>
 <div class="slides">
-    <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('static/banner/1_phone.png'); ?>" alt="Slide 3">
+    <img src="<?= base_url('/static/banner/3.png'); ?>" data-src-phone="<?= base_url('static/banner/3.png'); ?>" alt="Slide 3">
 </div>
 <div class="slides">
-    <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('/static/banner/1_phone.png'); ?>" alt="Slide 4">
+    <img src="<?= base_url('/static/banner/4.png'); ?>" data-src-phone="<?= base_url('/static/banner/1_phone.png'); ?>" alt="Slide 4">
 </div>
 
     <div class="progress-container">
@@ -62,7 +62,118 @@
 
 </div>
 </div>
-<div class="secondpanel">
+
+<div  data-aos="fade-right" class="sliderpanel">
+    <div class="title pt-4">
+        <h1>اختر منتجك</h1>
+    </div>
+    <div class="container py-4">  
+    <div class="card-slider">
+        <div class="card">
+        <img data-src=<?= base_url('/static/categories/paperbox.png'); ?> class="card-img-top lazyload" alt="...">
+        <div class="card-body mt-4">
+            <h5 class="card-title">العلب الورقية</h5>
+        </div>
+        </div>
+        <div class="card">
+        <img data-src=<?= base_url('/static/categories/bag.png'); ?> class="card-img-top lazyload" alt="...">
+        <div class="card-body mt-4">
+            <h5 class="card-title">الاكياس</h5>
+        </div>
+        </div>
+        <div class="card">
+        <img data-src=<?= base_url('/static/categories/shipping-box.png'); ?> class="card-img-top lazyload" alt="...">
+        <div class="card-body mt-4">
+            <h5 class="card-title">كراتين الشحن</h5>
+        </div>
+        </div>
+        <div class="card">
+        <img data-src=<?= base_url('/static/categories/hardcover.png'); ?> class="card-img-top lazyload" alt="...">
+        <div class="card-body mt-4">
+            <h5 class="card-title">علب الهاردكفر</h5>
+        </div>
+        </div>
+        <div class="card">
+        <img data-src=<?= base_url('/static/categories/rollup.png'); ?> class="card-img-top lazyload" alt="...">
+        <div class="card-body mt-4">
+            <h5 class="card-title">رول اب</h5>
+        </div>
+        </div>
+        <div class="card">
+        <img data-src=<?= base_url('/static/categories/sticker.png'); ?> class="card-img-top lazyload" alt="...">
+        <div class="card-body mt-4">
+            <h5 class="card-title">ستيكرات</h5>
+        </div>
+        </div>
+        <div class="card">
+        <img data-src=<?= base_url('/static/categories/brochure.png'); ?> class="card-img-top lazyload" alt="...">
+        <div class="card-body mt-4">
+            <h5 class="card-title">بروشورات</h5>
+        </div>
+        </div>
+        <div class="card">
+        <img data-src=<?= base_url('/static/categories/books.png'); ?> class="card-img-top lazyload" alt="...">
+        <div class="card-body mt-4">
+            <h5 class="card-title">الكتب</h5>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="button-container">
+        <a href="<?=base_url("/products?category=bag")?>" class="btn btn-primary">جميع المنتجات</a>
+    </div>
+</div>
+
+<div data-aos="fade-right" class="howpanel">
+    <div class="title pt-4">
+        <h1>مكائننا</h1>
+        <p>نقدم أحدث تقنيات الطباعة المتطورة التي تجمع بين الدقة والكفاءة العالية. من خلال استخدام معداتنا المتقدمة، نضمن لك جودة طباعة استثنائية وتفاصيل دقيقة في كل مشروع. </p>
+    </div>
+    <div class="video-container">
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+        <?php
+        // Define the path to the 'machines' folder
+        $machines_path = './static/machines/';
+
+        // Use PHP's scandir to get the list of files in the directory
+        $machine_images = scandir($machines_path);
+
+        // Filter out "." and ".." from the file list
+        $machine_images = array_diff($machine_images, array('.', '..'));
+
+        // Loop through each image and create the carousel items
+        $index = 0;
+        foreach ($machine_images as $image) {
+            // Check if the file is an image
+            $image_path = $machines_path . $image;
+            if (is_file($image_path)) {
+                ?>
+                <div class="carousel-item <?= $index === 0 ? 'active' : ''; ?>">
+                    <img src="<?php echo base_url('static/machines/' . $image); ?>" class="d-block w-100" alt="Machine image <?= $index + 1 ?>">
+                </div>
+                <?php
+                $index++;
+            }
+        }
+        ?>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+</div>
+</div>
+
+
+
+<div class="iconspanel">
     <div class="title pt-4">
         <h1>أنت تستحق دائماً الأفضل مع مطابع أضواء</h1>
         <p>نحن في أضواء نوفر لك.</p>
@@ -86,85 +197,10 @@
     </div>
 </div>
 
-<div  data-aos="fade-right" class="thirdpanel">
-    <div class="title pt-4">
-        <h1>اختر تصنيفك</h1>
-    </div>
-    <div class="container py-4">  
-    <div class="card-slider">
-        <div class="card">
-        <a href="/jojo"> 
-        <img data-src=<?= base_url('/static/categories/final/paperbox.png'); ?> class="card-img-top lazyload" alt="...">
-        <div class="card-body mt-4">
-            <h5 class="card-title">العلب الورقية</h5>
-        </div>
-        </a>
-        </div>
-        <div class="card">
-        <img data-src=<?= base_url('/static/categories/final/bag.png'); ?> class="card-img-top lazyload" alt="...">
-        <div class="card-body mt-4">
-            <h5 class="card-title">الاكياس</h5>
-        </div>
-        </div>
-        <div class="card">
-        <img data-src=<?= base_url('/static/categories/final/shipping-box.png'); ?> class="card-img-top lazyload" alt="...">
-        <div class="card-body mt-4">
-            <h5 class="card-title">كراتين الشحن</h5>
-        </div>
-        </div>
-        <div class="card">
-        <img data-src=<?= base_url('/static/categories/final/hardcover.png'); ?> class="card-img-top lazyload" alt="...">
-        <div class="card-body mt-4">
-            <h5 class="card-title">علب الهاردكفر</h5>
-        </div>
-        </div>
-        <div class="card">
-        <img data-src=<?= base_url('/static/categories/final/rollup.png'); ?> class="card-img-top lazyload" alt="...">
-        <div class="card-body mt-4">
-            <h5 class="card-title">رول اب</h5>
-        </div>
-        </div>
-        <div class="card">
-        <img data-src=<?= base_url('/static/categories/final/sticker.png'); ?> class="card-img-top lazyload" alt="...">
-        <div class="card-body mt-4">
-            <h5 class="card-title">ستيكرات</h5>
-        </div>
-        </div>
-        <div class="card">
-        <img data-src=<?= base_url('/static/categories/final/Brochure.png'); ?> class="card-img-top lazyload" alt="...">
-        <div class="card-body mt-4">
-            <h5 class="card-title">بروشورات</h5>
-        </div>
-        </div>
-        <div class="card">
-        <img data-src=<?= base_url('/static/categories/final/books.png'); ?> class="card-img-top lazyload" alt="...">
-        <div class="card-body mt-4">
-            <h5 class="card-title">الكتب</h5>
-        </div>
-        </div>
-    </div>
-    </div>
 
-    <div class="button-container">
-        <a href="/jojo" class="btn btn-primary">جميع المنتجات</a>
-    </div>
-</div>
 
-<div data-aos="fade-right" class="fourthpanel">
-    <div class="title pt-4">
-        <h1>كيف تعيش تجربة التفرد في تغليف منتجك؟</h1>
-        <p>اختر طريقة التغليف المناسبة لمنتجك ، بعد ذلك حدد المقاسات (المخصصة – القياسية)، ابدأ في تصميم منتجك وأضف مايناسب احتياجك من (صور _نصوص – وعالمتك التجارية أيضاً)، بعد ذلك سيظهر لك سعر تقريبي لمنتجك</p>
-    </div>
-    <div class="video-container">
-    <div class="full-width-video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/04cFaCzBOg0?si=_Ep-uzffHS-X9sHe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
-    </div>
-    <div class="button-container">
-        <a href="/jojo" class="btn btn-primary">اطلب الآن</a>
-    </div>
-</div>
 
-<div class=fifthpanel data-aos="fade-down" >
+<div class="looppanel" data-aos="fade-down" >
 <div class="loop-video">
     <video autoplay muted loop playsinline>
         <source src=<?= base_url('/static/video/video-loop.mp4'); ?> type="video/mp4">
@@ -175,14 +211,14 @@
         <h1>من نحن؟</h1>
         <h3>وهي شركة متخصصة في مجال الطباعة والتغليف منذ عام 2001. كما توفر جزء من متطلبات ADMPP تأسست. السوق على المستوى الخليجي، و تقديمها تحت شعار الجودة والسرعة و تنافسية األسعار واإلنجاز اليقف واليزال مستمر.</h3>
         <div class="button-container">
-            <a href="/jojo" class="btn btn-primary">اطلب الآن</a>
+            <a href="<?= base_url('/quote'); ?>" class="btn btn-primary">اطلب الآن</a>
         </div>
     </div>
 </div>
 </div>
 </div>
 
-<div data-aos="zoom-in-up" class="sixthpanel" id="ourworks">
+<div data-aos="zoom-in-up" class="ourworkspanel" id="ourworks">
     <div class="wrapper">
         <div class="title pt-4">
             <h1>أعمـــالنا :</h1>
@@ -225,13 +261,34 @@
             </ul>
         </div>
         <div class="button-container">
-            <a href="/jojo" class="btn btn-primary">جميع الاعمال</a>
+            <a href="<?= base_url('/works'); ?>" class="btn btn-primary">جميع الاعمال</a>
         </div>
     </div>
 </div>
 
 
-<div data-aos="fade-down" class="seventpanel">
+
+
+
+<div class="richtextpanel">
+<div class="right-side-rich">
+
+    <div class="richimg-container">
+    <img src="<?= base_url('/static/banner/richimage.png'); ?>" class="lazyload" alt="">
+    </div>
+</div>
+<div class="left-side-rich">
+    <div class="title-rich">
+        <h1>أكثر من مجرد تغليف</h1>
+    </div>
+    <div class="title-text">
+        <p>تستحق منتجاتك أن تُقدم في صناديق مصنوعة من مواد مستدامة، تتميز بجودة طباعة ممتازة وتصميم مثالي. نحن نساعدك في ابتكار عبوات رائعة تتناسب مع جميع الاستخدامات، المجالات، والصناعات، لضمان تقديم تجربة استثنائية لمستلم المنتج.</p>
+    </div>
+    </div>
+
+</div>
+
+<div data-aos="fade-down" class="partnerpanel">
     <div class="title pt-4" style="text-align: center;">
         <h1>شركاؤنا</h1>
     </div>
@@ -260,12 +317,11 @@
     </ul>
     </ul>
 </div>
-
-<div data-aos="fade-up" class="eighthpanel">
+<div data-aos="fade-up" class="faqpanel">
     <div class="questions-rich">
-        <h2>نعرف بإن كل سؤال مهم, لكن هذي الأسئلة هي الأكثر شيوعاً.</h2>
+        <h2>نعرف بأن كل سؤال مهم, لكن هذي الأسئلة هي الأكثر شيوعاً.</h2>
         <div class="button-container">
-            <a href="/jojo" class="btn btn-primary">جميع الاسئلة</a>
+        <a href="<?= base_url("faq")?>" class="btn btn-primary">جميع الاسئلة</a>
         </div>
     </div>
     <div class="question-accordion">
@@ -321,11 +377,80 @@
 
 
     </div>
+
+    </div>
+
+    <div class="reviews-section">
+    <h2 style="font-weight:bold;">آراء العملاء</h2>
+    <div class="reviews">
+        <?php foreach ($reviews as $index => $review): ?>
+            <div class="review-container <?= $index >= 4 ? 'hidden' : ''; ?>">
+                <div class="reviewer">
+                    <div class="reviewer-image">
+                        <img src="<?= esc($review['author_image']); ?>" 
+                            alt="<?= esc($review['author_title']); ?>" 
+                            onerror="this.src='<?= base_url('/static/fallback/profile.png'); ?>';">
+                    </div>
+                    <div class="reviewer-name">
+                        <?= esc($review['author_title']); ?>
+                        <div class="verified">
+                            <img src="<?= base_url('/static/svgs/verified.svg') ?>" alt="Verified Review">
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <div class="rating">
+                        <?php for ($i = 0; $i < $review['review_rating']; $i++): ?>
+                            <img src="<?= base_url('/static/svgs/star.svg') ?>" alt="Star">
+                        <?php endfor; ?>
+                    </div>
+                    <div class="review-text">
+                        <?= esc($review['review_text']); ?>
+                    </div>
+                    <div class="google-svg">
+                        <img src="<?= base_url('/static/svgs/google.svg') ?>" alt="Google Review">
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="load-more">عرض المزيد</div>
 </div>
+
 <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loadMoreButton = document.querySelector('.load-more');
+    const hiddenReviews = Array.from(document.querySelectorAll('.review-container.hidden'));
+
+    let reviewsLoaded = 8; // Initial number of reviews loaded
+
+    // Function to load more reviews
+    function loadMoreReviews() {
+        // Get the next 4 hidden reviews
+        const reviewsToShow = hiddenReviews.splice(0, 4);
+        
+        // Remove the 'hidden' class to display them
+        reviewsToShow.forEach(review => review.classList.remove('hidden'));
+        
+        // If there are no more hidden reviews, hide the button
+        if (hiddenReviews.length === 0) {
+            loadMoreButton.style.display = 'none';
+        }
+    }
+
+    // Load more reviews on button click
+    loadMoreButton.addEventListener('click', loadMoreReviews);
+
+    // Initially load the first set of reviews
+    loadMoreReviews();
+});
+
+
+
     const slides = document.querySelectorAll('.slides');
     const progressBars = document.querySelectorAll('.progress-bar-fill');
-    const interval = 4000; // Interval between slide changes
+    const interval = 6000; // Interval between slide changes
 
     let currentSlide = 0; // Index of the current slide
 

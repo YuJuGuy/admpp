@@ -1,0 +1,336 @@
+{
+    "products": [
+        {
+            "id": "paper-box",
+            "name": "علبة ورقية",
+            "image": "/static/categories/paperbox.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "text", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "طول", "name": "length", "id": "length-field"},
+                {"type": "text", "label": "عرض", "name": "width", "id": "width-field"},
+                {"type": "text", "label": "ارتفاع", "name": "height", "id": "height-field"},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "id": "printing-faces-field", "options": ["خارجي", "خارجي و داخلي"]},
+                {"type": "button_select", "label": "السلوفان", "name": "lamination", "id": "lamination-field", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "id": "artistic-additions-field", "options": ["بصمة", "يوفي", "كفراج", "متلايز"], "multiple": "true"},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        },
+        {
+            "id": "carton-box",
+            "name": "علبة كرتون شحن",
+            "image": "/static/categories/shipping-box.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "text", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "text", "label": "المقاس - ارتفاع", "name": "height"},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "options": ["خارجي", "خارجي و داخلي"]},
+                {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["أي فلوت", "بي فلوت"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "متلايز"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        },
+        {
+            "id": "bags",
+            "name": "أكياس",
+            "image": "/static/categories/bag.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "text", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "text", "label": "المقاس - ارتفاع", "name": "height"},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "options": ["خارجي", "خارجي و داخلي"]},
+                {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "نوع الورق", "name": "paper_type", "options": ["انفركوت", "كوشية", "ورق مخصوص"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["250 جرام", "300 جرام", "350 جرام"]},
+                {"type": "button_select", "label": "الحبل", "name": "rope_type", "options": ["حبل عادي", "حبل مجدول", "شريطة", "ريبون"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        },
+        {
+            "id": "cup-holder",
+            "name": "حامل اكواب",
+            "image": "/static/categories/cupholder.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "text", "label": "المقاس - ارتفاع", "name": "height"},
+                {"type": "text", "label": "مقاس الكوب", "name": "cup_size"},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "options": ["خارجي", "خارجي و داخلي"]},
+                {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        },
+        {
+            "id": "cards",
+            "name": "كروت",
+            "image": "/static/categories/cards.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "options": ["وجه", "وجهين"]},
+                {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        }, {
+            "id": "brochure",
+            "name": "بروشور",
+            "image": "/static/categories/brochure.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "text", "label": "عدد الصفحات", "name": "page_count"},
+                {"type": "button_select", "label": "التجليد", "name": "binding", "options": ["دبوس", "برش"]},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "options": ["وجهين"]},
+                {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["200 جرام", "150 جرام", "170 جرام", "٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        },
+        {
+            "id": "flyer",
+            "name": "فلايرات",
+            "image": "/static/categories/flyer.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "button_select", "label": "طوي", "name": "folding", "options": ["1", "2", "3", "4"]},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "options": ["وجه", "وجهين"]},
+                {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["وجه", "وجهين"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["200 جرام", "150 جرام", "170 جرام", "٢٥٠ جرام"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        },
+        {
+            "id": "book",
+            "name": "كتب",
+            "image": "/static/categories/books.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "text", "label": "عدد الصفحات", "name": "page_count"},
+                {"type": "button_select", "label": "التجليد", "name": "binding", "options": ["دبوس", "برش"]},
+                {"type": "button_select", "label": "السلوفان على الغلاف", "name": "cover_lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "السماكة لورق الغلاف", "name": "cover_thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
+                {"type": "select", "label": "السماكة لورق الداخلي", "name": "inner_paper_thickness", "options": ["80 جرام", "90 جرام", "100 جرام", "115 جرام", "130 جرام", "150 جرام", "200 جرام كوشيه", "60 جرام اوفست", "70 جرام اوفست", "80 جرام اوفست", "100 جرام اوفست", "70 جرام بلكي", "80 جرام بلكي", "90 جرام بوندبيج"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        }, 
+        {
+            "id": "magazine",
+            "name": "مجلة",
+            "image": "/static/categories/magazine.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "text", "label": "عدد الصفحات", "name": "page_count"},
+                {"type": "button_select", "label": "التجليد", "name": "binding", "options": ["دبوس", "برش"]},
+                {"type": "button_select", "label": "السلوفان على الغلاف", "name": "cover_lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["وجه", "وجهين"]},
+                {"type": "button_select", "label": "السماكة لورق الغلاف", "name": "cover_thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام"]},
+                {"type": "button_select", "label": "السماكة لورق الداخلي", "name": "inner_paper_thickness", "options": ["80 جرام", "90 جرام", "100 جرام", "115 جرام", "130 جرام"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        },
+        {
+            "id": "notebook",
+            "name": "دفاتر",
+            "image": "/static/categories/books.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس - طول", "name": "length"},
+                {"type": "text", "label": "المقاس - عرض", "name": "width"},
+                {"type": "text", "label": "عدد الصفحات", "name": "page_count"},
+                {"type": "button_select", "label": "التجليد", "name": "binding", "options": ["دبوس", "لولبي", "برش"]},
+                {"type": "button_select", "label": "السلوفان على الغلاف", "name": "cover_lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "السماكة لورق الغلاف", "name": "cover_thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
+                {"type": "select", "label": "السماكة لورق الداخلي", "name": "inner_paper_thickness", "options": ["80 جرام", "90 جرام", "100 جرام", "115 جرام", "130 جرام"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
+            ]
+        },{
+            "id": "vacuum",
+            "name": "فاكيوم",
+            "image": "/static/categories/vacuum.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "طول", "name": "length", "id": "length-field"},
+                {"type": "text", "label": "عرض", "name": "width", "id": "width-field"},
+                {"type": "text", "label": "ارتفاع", "name": "height", "id": "height-field"},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["٣٠٠ جرام", "٣٥٠ جرام"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        },
+        {
+            "id": "envelopes",
+            "name": "ظرف",
+            "image": "/static/categories/envelopes.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "طول", "name": "length", "id": "length-field"},
+                {"type": "text", "label": "عرض", "name": "width", "id": "width-field"},
+                {"type": "button_select", "label": "نوع الظرف", "name": "envelope_type", "id": "envelope-type-field", "options": ["جاهز", "تصنيع"]},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "id": "printing-faces-field", "options": ["خارجي", "خارجي و داخلي"]},
+                {"type": "button_select", "label": "السلوفان", "name": "lamination", "id": "lamination-field", "options": ["لامع", "مطفي", "بدون سلوفان"]},
+                {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام", "120", "100"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "id": "artistic-additions-field", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        },
+        {
+            "id": "letterhead",
+            "name": "ورق رسمي",
+            "image": "/static/categories/letterhead.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "طول", "name": "length", "id": "length-field"},
+                {"type": "text", "label": "عرض", "name": "width", "id": "width-field"},
+                {"type": "button_select", "label": "نوع الورق", "name": "paper_type", "id": "paper-type-field", "options": ["اوفست", "ورق مخصوص"]},
+                {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "id": "printing-faces-field", "options": ["وجه", "وجهين"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["80 جرام", "100 جرام", "120 جرام"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "id": "artistic-additions-field", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        },
+        {
+            "id": "roll-up",
+            "name": "رول اب",
+            "image": "/static/categories/rollup.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس", "name": "size", "id": "size-field", "value": "200*85 سم"},
+                {"type": "button_select", "label": "نوعه", "name": "type", "id": "type-field", "options": ["وايت فلم", "بنر", "سلوفان"]},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["لامع", "مطفي"]},
+                {"type": "button_select", "label": "الطباعة", "name": "printing", "id": "printing-field", "options": ["جهة واحدة"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        },
+        {
+            "id": "butter-paper",
+            "name": "ورق زبدة",
+            "image": "/static/categories/butterpaper.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "طول", "name": "length", "id": "length-field"},
+                {"type": "text", "label": "عرض", "name": "width", "id": "width-field"},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["40 جرام", "60 جرام"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        },{
+            "id": "cling-film",
+            "name": "ورق كلك",
+            "image": "/static/categories/clingfilm.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "طول", "name": "length", "id": "length-field"},
+                {"type": "text", "label": "عرض", "name": "width", "id": "width-field"},
+                {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["40 جرام", "60 جرام"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        },
+        {
+            "id": "stickers",
+            "name": "استيكرات",
+            "image": "/static/categories/sticker.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "طول", "name": "length", "id": "length-field"},
+                {"type": "text", "label": "عرض", "name": "width", "id": "width-field"},
+                {"type": "button_select", "label": "شكل الاستيكر", "name": "sticker_shape", "id": "sticker-shape-field", "options": ["دائري", "مربع أو مستطيل", "شكل خاص"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        },
+        {
+            "id": "white-film",
+            "name": "وايت فلم",
+            "image": "/static/categories/whitefilm.png",
+            "fields": [
+                {"type": "text", "label": "اسم البراند أو اسم العميل", "name": "brand_client","required": "YES",  "id": "brand-client-field"},
+                {"type": "text", "label": "رقم الجوال", "name": "number", "id": "number-field"},
+                {"type": "number", "label": "الكمية", "name": "quantity",  "id": "quantity-field"},
+                {"type": "text", "label": "المقاس", "name": "size", "id": "size-field", "value": "200*85 سم"},
+                {"type": "button_select", "label": "نوع البنر", "name": "banner_type", "id": "banner-type-field", "options": ["فيلم أبيض مطفي", "فيلم أبيض لامع"]},
+                {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
+                {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
+            ]
+        }
+           ]
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,10 +33,10 @@
                                 <a class="nav-link active" href=<?= base_url('/'); ?>>الصفحة الرئيسية</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">منتجاتنا</a>
+                                <a class="nav-link" href=<?= base_url('/products?category=all');?>>منتجاتنا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">اعمالنا</a>
+                                <a class="nav-link" href=<?= base_url('/works');?>>اعمالنا</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" href=<?= base_url('/about'); ?>>عن الشركة</a>
@@ -45,7 +45,7 @@
                                 <a class="nav-link" href=<?= base_url('/blogs'); ?>>المدونة</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">طلب تسعير</a>
+                                <a class="nav-link"  href=<?= base_url('/quote');?>>طلب تسعير</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href=<?= base_url('/faq');?>>الاسئلة الشائعة</a>
@@ -56,15 +56,15 @@
                         </ul>
                     </div>
                     <div class="social-icons ms-auto">
-                        <a href="https://wa.me/1234567890" target="_blank">
+                        <a href="https://wa.me/966562243082" target="_blank">
                             <img src=<?= base_url('/static/svgs/wa.svg'); ?> alt="whatsapp">
                         </a>
-                        <a href="https://www.facebook.com/yourpage" target="_blank">
+                        <a href="https://www.facebook.com/Admpp22" target="_blank">
                         <img src=<?= base_url('/static/svgs/fb.svg'); ?> alt="whatsapp">
-                        <a href="https://twitter.com/yourprofile" target="_blank">
+                        <a href="https://x.com/admpp22" target="_blank">
                             <img src=<?= base_url('/static/svgs/x.svg'); ?> alt="whatsapp">
                         </a>
-                        <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <a href="https://www.instagram.com/admpp22" target="_blank">
                             <img src=<?= base_url('/static/svgs/ig.svg'); ?> alt="whatsapp">
                         </a>
                     </div>
@@ -78,20 +78,36 @@
         <div class="offcanvas-header">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body d-flex align-items-center justify-content-center">
+        <div class="offcanvas-body d-flex align-items-center justify-content-center flex-column">
             <div class="nav flex-column">
                 <a class="nav-link" href=<?= base_url('/'); ?>>الصفحة الرئيسية</a>
-                <a class="nav-link" href="#">منتجاتنا</a>
-                <a class="nav-link" href="#">اعمالنا</a>
+                <a class="nav-link" href=<?= base_url('/products?category=all');?>>منتجاتنا</a>
+                <a class="nav-link" href=<?= base_url('/works');?>>اعمالنا</a>
                 <a class="nav-link" href=<?= base_url('/about'); ?>>عن الشركة</a>
                 <a class="nav-link" href=<?= base_url('/blogs'); ?>>المدونة</a>
-                <a class="nav-link" href="#">طلب تسعير</a>
+                <a class="nav-link"  href=<?= base_url('/quote');?>>طلب تسعير</a>
                 <a class="nav-link"  href=<?= base_url('/faq');?>>الاسئلة الشائعة</a>
                 <a class="nav-link" href=<?= base_url('/contact');?>>تواصل معنا</a>
 
             </div>
+
+            <div class="social-media-phone">
+                <a href="https://wa.me/966562243082" target="_blank">
+                    <img src=<?= base_url('/static/svgs/wa.svg'); ?> alt="whatsapp">
+                </a>
+                <a href="https://www.facebook.com/Admpp22" target="_blank">
+                    <img src=<?= base_url('/static/svgs/fb.svg'); ?> alt="whatsapp">
+                </a>
+                <a href="https://x.com/admpp22" target="_blank">
+                    <img src=<?= base_url('/static/svgs/x.svg'); ?> alt="whatsapp">
+                </a>
+                <a href="https://www.instagram.com/admpp22" target="_blank">
+                    <img src=<?= base_url('/static/svgs/ig.svg'); ?> alt="whatsapp">
+                </a>
+            </div>
         </div>
     </div>
+    
     <script src="<?= base_url('/static/lightbox/js/lightbox-plus-jquery.js'); ?>"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
@@ -100,6 +116,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
+            var baseUrl = '<?= base_url(); ?>';
+
             window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
@@ -109,8 +127,9 @@
             }
         });
 
+        lightbox.option({
+            'maxHeight': 720,
+        })
 
 
     </script>
-</body>
-</html>

@@ -54,20 +54,20 @@
                 </div>
                 <div class="info">
                     <i class="fa-solid fa-envelope"></i>
-                    <p>info@admpp.com</p>
-                </div>
+                    <p><a href="mailto:info@admpp.com">info@admpp.com</a></p>
+                    </div>
                 <div class="social-icons-contact align-self-center">
-                    <a href="https://wa.me/1234567890" target="_blank">
-                        <img src="<?= base_url('/static/svgs/wa.svg'); ?>" alt="whatsapp">
+                <a href="https://wa.me/966562243082" target="_blank">
+                <img src="<?= base_url('/static/svgs/wa.svg'); ?>" alt="whatsapp">
                     </a>
-                    <a href="https://www.facebook.com/yourpage" target="_blank">
-                        <img src="<?= base_url('/static/svgs/fb.svg'); ?>" alt="facebook">
+                    <a href="https://www.facebook.com/Admpp22" target="_blank">
+                    <img src="<?= base_url('/static/svgs/fb.svg'); ?>" alt="facebook">
                     </a>
-                    <a href="https://twitter.com/yourprofile" target="_blank">
-                        <img src="<?= base_url('/static/svgs/x.svg'); ?>" alt="twitter">
+                    <a href="https://x.com/admpp22" target="_blank">
+                    <img src="<?= base_url('/static/svgs/x.svg'); ?>" alt="twitter">
                     </a>
-                    <a href="https://www.instagram.com/yourprofile" target="_blank">
-                        <img src="<?= base_url('/static/svgs/ig.svg'); ?>" alt="instagram">
+                    <a href="https://www.instagram.com/admpp22" target="_blank">
+                    <img src="<?= base_url('/static/svgs/ig.svg'); ?>" alt="instagram">
                     </a>
                 </div>
             </div>
@@ -116,7 +116,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
             }, 5000);
             return;
         }
-        if (!/^\d{10}$/.test(contactInfo)) {
+        if (!/^\d+$/.test(contactInfo)) {
             responseMessage.style.display = 'block';
             responseMessage.textContent = 'رقم الهاتف يجب أن يحتوي على 10 أرقام فقط.';
             responseMessage.className = 'message error';

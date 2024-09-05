@@ -11107,6 +11107,14 @@ return jQuery;
     // Github issue: https://github.com/lokesh/lightbox2/issues/663
     $('<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay"></div><div id="lightbox" tabindex="-1" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""/><div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image" href="" ></a><a class="lb-next" role="button" tabindex="0" aria-label="Next image" href="" ></a></div><div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div></div></div></div>').appendTo($('body'));
 
+
+	// add order button to the lightbox 
+
+
+
+    $('<div class="button-container-lightbox"><div class="button-container"><a href="' + baseUrl + 'quote" class="btn btn-primary">اطلب تسعيرة</a></div><div class="button-container"><a href="https://wa.me/966562243082" class="btn btn-primary" target="_blank">واتس</a></div></div>')
+        .appendTo($('#lightbox'));
+
     // Cache jQuery objects
     this.$lightbox       = $('#lightbox');
     this.$overlay        = $('#lightboxOverlay');
