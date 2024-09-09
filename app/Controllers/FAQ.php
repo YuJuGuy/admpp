@@ -9,7 +9,10 @@ class FAQ extends BaseController
 {
     public function index(): string
 {
-    require 'D:/admpp/vendor/autoload.php';
+
+    // require autoload dynamically from vendor folder
+
+    require_once APPPATH . '../vendor/autoload.php';
 
     $filePath = FCPATH . 'static/questions.xlsx';
     $spreadsheet = IOFactory::load($filePath);
