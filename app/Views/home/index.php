@@ -131,7 +131,7 @@
         <p>نقدم أحدث تقنيات الطباعة المتطورة التي تجمع بين الدقة والكفاءة العالية. من خلال استخدام معداتنا المتقدمة، نضمن لك جودة طباعة استثنائية وتفاصيل دقيقة في كل مشروع. </p>
     </div>
     <div class="video-container">
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel"    >
         <div class="carousel-inner">
         <?php
         // Define the path to the 'machines' folder
