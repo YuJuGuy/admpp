@@ -64,7 +64,7 @@ $contact_info
                 $postData = [
                     "chatId" => $chatId,
                     "text" => $text,
-                    "session" => "Madhi"
+                    "session" => "default"
                 ];
 
                 // Send POST request to custom API

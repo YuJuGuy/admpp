@@ -118,7 +118,7 @@ class Quote extends BaseController
         $postData = [
             "chatId" => $chatId,
             "text" => $text,
-            "session" => "Madhi"
+            "session" => "default"
         ];
 
         try {
