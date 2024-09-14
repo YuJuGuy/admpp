@@ -209,34 +209,6 @@ window.onload = function() {
 };
 
 
-$(document).ready(function(){
-    $('.card-slider').slick({
-      infinite: true,
-     // if card slider has id category make slidesToShow: 6 if it doesnt have a id make it 4
-      slidesToShow: 4,// Number of cards to show
-
-      slidesToScroll: 1, // Number of cards to scroll at a time
-      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-      responsive: [
-        {
-          breakpoint: 1024, // Below this breakpoint
-          settings: {
-            slidesToShow: 2, // Number of cards to show
-            slidesToScroll: 1 // Number of cards to scroll
-          }
-        },
-        {
-          breakpoint: 600, // Below this breakpoint
-          settings: {
-            slidesToShow: 1, // Number of cards to show
-            slidesToScroll: 1 // Number of cards to scroll
-          }
-        }
-      ]
-    });
-  });
-
 
 
   $(document).ready(function(){
