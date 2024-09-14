@@ -11,13 +11,13 @@
     <img src="<?= base_url('/static/banner/1.png'); ?>" data-src-phone="<?= base_url('/static/banner/1_phone.png'); ?>" alt="Slide 1">
 </div>
 <div class="slides">
-    <img src="<?= base_url('/static/banner/2.png'); ?>" data-src-phone="<?= base_url('static/banner/2.png'); ?>" alt="Slide 2">
+    <img src="<?= base_url('/static/banner/2.png'); ?>" data-src-phone="<?= base_url('static/banner/2_phone.png'); ?>" alt="Slide 2">
 </div>
 <div class="slides">
-    <img src="<?= base_url('/static/banner/3.png'); ?>" data-src-phone="<?= base_url('static/banner/3.png'); ?>" alt="Slide 3">
+    <img src="<?= base_url('/static/banner/3.png'); ?>" data-src-phone="<?= base_url('static/banner/3_phone.png'); ?>" alt="Slide 3">
 </div>
 <div class="slides">
-    <img src="<?= base_url('/static/banner/4.png'); ?>" data-src-phone="<?= base_url('/static/banner/1_phone.png'); ?>" alt="Slide 4">
+    <img src="<?= base_url('/static/banner/4.png'); ?>" data-src-phone="<?= base_url('/static/banner/4_phone.png'); ?>" alt="Slide 4">
 </div>
 
     <div class="progress-container">
@@ -294,20 +294,10 @@
     </div>
     <ul class="partners">
     <?php
-    $partners = [
-        '/static/partners/1.png',
-        '/static/partners/2.png',
-        '/static/partners/3.png',
-        '/static/partners/4.jpg',
-        '/static/partners/5.png',
-        '/static/partners/6.png',
-        '/static/partners/7.png',
-        '/static/partners/8.png',
-        '/static/partners/9.jpg',
-        '/static/partners/10.jpeg',
-        '/static/partners/11.png',
-        '/static/partners/12.png'
-    ];
+    $partners = [];
+    for ($i = 1; $i <= 12; $i++) {
+        $partners[] = '/static/partners/' . $i . '.png';
+    }
     ?>
 
     <ul class="partners">
