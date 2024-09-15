@@ -24,7 +24,8 @@
                 <a href="https://maps.app.goo.gl/Q5ZBtRY91nRBQ7Ca6" target="_blank">
                 <p>رابط خريطة العنوان</p>
                 </a>
-                <p>966-56-224-3082+ | 966-50-626-2962+</p>
+                <p><a href="tel:+966562243082">966-56-224-3082+</a> | <a href="tel:+966506262962">966-50-626-2962+</a></p>      
+                
                 <p><a href="mailto:info@admpp.com">info@admpp.com</a></p>
                 <p><a href="mailto:emarketing@admpp.com">emarketing@admpp.com</a></p>
 

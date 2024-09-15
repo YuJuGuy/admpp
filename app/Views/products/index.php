@@ -142,6 +142,8 @@ $category_names_in_arabic = [
 
 
 <script>
+let imageCache = {}; // Cache to store loaded images for each category
+
 function loadCategoryImages(category, clickedElement = null) {
     const imagesContainer = document.getElementById('imagesContainer');
     const categoryItems = document.querySelectorAll('.category-item');
@@ -164,38 +166,52 @@ function loadCategoryImages(category, clickedElement = null) {
         imagesContainer.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
     }
 
-    // Make an AJAX request to get images for the selected category
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', `/list_images.php?category=${category}`, true);
+    // Check if the images for this category are already cached
+    if (imageCache[category]) {
+        // If cached, display the images immediately
+        displayImages(imageCache[category]);
+    } else {
+        // Make an AJAX request to get images for the selected category
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', `/list_images.php?category=${category}`, true);
 
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            const imageUrls = JSON.parse(xhr.responseText);
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                const imageUrls = JSON.parse(xhr.responseText);
+                
+                // Cache the images for the category
+                imageCache[category] = imageUrls;
 
-            // Display images in the container
-            imageUrls.forEach(url => {
-                const imageDiv = document.createElement('div');
-                imageDiv.className = 'col image-item mb-4';
-                const img = document.createElement('img');
-                // save img in a variable with data-lightbox="our-works"
-                const a = document.createElement('a');
-                a.href = url;
-                a.setAttribute('data-lightbox', 'our-works');
-                a.target = '_blank';
-                img.src = url;
-                a.appendChild(img);
-                imageDiv.appendChild(a);
-                imagesContainer.appendChild(imageDiv);
-            });
-        } else {
-            console.error('Failed to load images');
-        }
-    };
+                // Display the images
+                displayImages(imageUrls);
+            } else {
+                console.error('Failed to load images');
+            }
+        };
 
-    xhr.send();
+        xhr.send();
+    }
 
     // Update URL to include the category
     history.pushState(null, null, `?category=${category}`);
+}
+
+function displayImages(imageUrls) {
+    const imagesContainer = document.getElementById('imagesContainer');
+
+    imageUrls.forEach(url => {
+        const imageDiv = document.createElement('div');
+        imageDiv.className = 'col image-item mb-4';
+        const img = document.createElement('img');
+        const a = document.createElement('a');
+        a.href = url;
+        a.setAttribute('data-lightbox', 'our-works');
+        a.target = '_blank';
+        img.src = url;
+        a.appendChild(img);
+        imageDiv.appendChild(a);
+        imagesContainer.appendChild(imageDiv);
+    });
 }
 
 // On page load, check for category in URL and load corresponding images
@@ -205,9 +221,10 @@ window.onload = function() {
 
     if (category) {
         loadCategoryImages(category);
+    } else {
+        loadCategoryImages('all');
     }
 };
-
 
 
 

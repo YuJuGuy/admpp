@@ -45,19 +45,19 @@ class Contact extends BaseController
                 $chatId = '120363296639205911@g.us';
                 $text = 
                 
-"وصلتك رسالة من 
-*$name*
+                "وصلتك رسالة من 
+                *$name*
 
-صاحب الرقم 
-$contact_info
+                صاحب الرقم 
+                $contact_info
 
-الرسالة 
-*$message*
+                الرسالة 
+                *$message*
 
 
-عميل جديد محتمل 😉🤑
-عجل بالرد عشان ما يروح عليك العميل
-";
+                عميل جديد محتمل 😉🤑
+                عجل بالرد عشان ما يروح عليك العميل
+                ";
 
 
 
@@ -83,17 +83,46 @@ $contact_info
                     $data['error'] = "There was an error submitting your request. Please try again.";
                 }
             } else if ($contact_method == 'email') {
-                // Send email
-                $emailService = \Config\Services::email();
-                $emailService->setFrom($contact_info, $name);
-                $emailService->setTo('your-email@example.com');
-                $emailService->setSubject('Contact Us Form Submission');
-                $emailService->setMessage($message);
 
+                $messagetosend = 
+                "وصلتك رسالة من 
+                *$name*
+
+                صاحب الايميل 
+                $contact_info
+
+                الرسالة 
+                *$message*
+
+                عميل جديد محتمل 😉🤑
+                عجل بالرد عشان ما يروح عليك العميل
+                ";
+            
+                // Get the email service instance
+                $emailService = \Config\Services::email();
+            
+                // Get the configured "from" email and name from the email config
+                $fromEmail = config('Email')->fromEmail;
+                $fromName = config('Email')->fromName;
+            
+                // Set the sender's email and name from the configuration
+                $emailService->setFrom($fromEmail, $fromName);
+            
+                // Set the recipient (retrieved from the configuration, not overwriting the service)
+                $recipients = config('Email')->recipients;
+                $emailService->setTo($recipients); // Use setTo() to set the recipients
+            
+                // Set the subject and message for the email
+                $emailService->setSubject('Contact Us Form Submission');
+                $emailService->setMessage($messagetosend);
+            
+                // Send the email and check the result
                 if ($emailService->send()) {
                     $data['success'] = "Thank you for contacting us via Email!";
                 } else {
+                    // Get the error message from the debugger and display it
                     $data['error'] = "There was an error sending your email. Please try again.";
+                    log_message('error', 'Email sending failed: ' . $emailService->printDebugger()); // Log the error for debugging purposes
                 }
             }
 
