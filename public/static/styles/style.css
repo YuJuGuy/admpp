@@ -461,6 +461,7 @@ body {
     align-items: center; /* Center content vertically */
     text-align: center;
     font: inherit;
+    padding: 20px 0px;
     height: auto;
   }
 
@@ -645,7 +646,6 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1000px;
-    margin-bottom: 100px;
     padding-left: 0 !important;
     align-self: center;
 }
@@ -714,13 +714,12 @@ ul {
 }
 /* 8th panel */
 .faqpanel {
-  margin-top: 2rem;
   width: 100%;
   display: flex;
   flex-direction: row;
   background-color: white;
   justify-content: center;
-  padding: 3rem;
+  padding: 20px;
   text-align: center;
   font: inherit;
   direction: rtl;
@@ -2009,14 +2008,12 @@ font-weight: bold;
 
       .reviews-section {
           background-color: #f9f9f9;
-          padding: 40px 20px;
+          padding: 20px;
           border-radius: 8px;
-          margin-top: 40px;
           text-align: center;
       }
 
       .reviews-section h2 {
-          font-size: 2rem;
           color: #0077c2;
           margin-bottom: 40px;
       }
@@ -2147,7 +2144,6 @@ font-weight: bold;
 
       .reviews-section {
   text-align: center;
-  margin-top: 2rem;
 }
 
 .reviews {
