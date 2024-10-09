@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المدونة</title>
+
 </head>
 <body>
 <div id="blogbanner" class="blogbanner">
@@ -21,13 +22,16 @@
                 <div class="row row-cols-1 row-cols-lg-2 p-4 justify-content-center">
                     <?php 
                     $duration = 0; // Initial duration
-                    foreach ($blogs_list as $blogs_item): 
+                    foreach ($blogs_list as $index => $blogs_item): 
                         // Format the date to 'Y-m-d'
                         $created_at = (new DateTime($blogs_item['created_at']))->format('Y-m-d');
+
+                        // Alternate between 1:1 and 4:3 aspect ratios
+                        $aspect_ratio_class = ($index % 2 == 0) ? 'aspect-ratio-1-1' : 'aspect-ratio-4-3';
                     ?>
                         <div class="col blog" data-aos="zoom-in" data-aos-duration="<?= $duration ?>">
                             <a href="<?= base_url('blogs/' . esc($blogs_item['id'])) ?>" class="blog-link">
-                                <div class="img-container">
+                                <div class="img-container <?= $aspect_ratio_class ?>">
                                     <img src="<?= base_url('/static/blog_pics/') . esc($blogs_item['img']) ?>.jpg" alt="<?= esc($blogs_item['title']) ?>">
                                 </div>
                             </a>
@@ -92,13 +96,19 @@
 
         // Add the active class to the current page link
         const links = document.querySelectorAll('.pagination a');
+        const currentURL = window.location.href;
+        const currentPath = window.location.pathname;
+        
         links.forEach(link => {
-            if (link.href === window.location.href) {
+            // Check if link is the first page, considering both '/blogs' and '/blogs?page=1'
+            if ((currentPath === '/blogs' && !currentURL.includes('?page=')) || link.href === currentURL) {
                 link.classList.add('active');
             }
         });
+
         AOS.init();
     });
 </script>
+
 </body>
 </html>

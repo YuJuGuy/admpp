@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hotjar Tracking Code for https://admpp.com/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5152399,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLCJ50X7HM"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-PLCJ50X7HM'); </script>
     <link rel="stylesheet" type="text/css" href="<?= base_url('/static/styles/style.css'); ?>">
     <link href="<?= base_url('/static/lightbox/css/lightbox.css'); ?>" rel="stylesheet" />
     <link
@@ -36,7 +49,7 @@
                                 <a class="nav-link" href=<?= base_url('/products?category=all');?>>منتجاتنا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href=<?= base_url('/works');?>>اعمالنا</a>
+                                <a class="nav-link" href=<?= base_url('/works');?>>أعمالنا</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" href=<?= base_url('/about'); ?>>عن الشركة</a>
@@ -82,7 +95,7 @@
             <div class="nav flex-column">
                 <a class="nav-link" href=<?= base_url('/'); ?>>الصفحة الرئيسية</a>
                 <a class="nav-link" href=<?= base_url('/products?category=all');?>>منتجاتنا</a>
-                <a class="nav-link" href=<?= base_url('/works');?>>اعمالنا</a>
+                <a class="nav-link" href=<?= base_url('/works');?>>أعمالنا</a>
                 <a class="nav-link" href=<?= base_url('/about'); ?>>عن الشركة</a>
                 <a class="nav-link" href=<?= base_url('/blogs'); ?>>المدونة</a>
                 <a class="nav-link"  href=<?= base_url('/quote');?>>طلب تسعير</a>

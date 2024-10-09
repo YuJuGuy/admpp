@@ -16,7 +16,8 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost/';
+    public string $baseURL = 'https://admpp.com';
+
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

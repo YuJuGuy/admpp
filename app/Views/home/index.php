@@ -27,7 +27,7 @@
                 <div class="progress-bar-fill" id="progressBar1"></div>
             </div>
             <div class="progress-bar-text">
-                <p>الاعلانات</p>
+                <p>إعلانات</p>
             </div>
         </div>
 
@@ -36,7 +36,7 @@
                 <div class="progress-bar-fill" id="progressBar2"></div>
             </div>
             <div class="progress-bar-text">
-                <p>الاكياس</p>
+                <p>الأكياس</p>
             </div>
         </div>
 
@@ -70,49 +70,65 @@
     <div class="container py-4">  
     <div class="card-slider">
         <div class="card">
+        <a href=<?= base_url('/products?category=paperbox'); ?>>
         <img data-src=<?= base_url('/static/categories/paperbox.png'); ?> class="card-img-top lazyload" alt="...">
+        </a>
         <div class="card-body mt-4">
             <h5 class="card-title">العلب الورقية</h5>
         </div>
         </div>
         <div class="card">
+        <a href=<?= base_url('/products?category=bag'); ?>>
         <img data-src=<?= base_url('/static/categories/bag.png'); ?> class="card-img-top lazyload" alt="...">
+        </a>
         <div class="card-body mt-4">
-            <h5 class="card-title">الاكياس</h5>
+            <h5 class="card-title">الأكياس</h5>
         </div>
         </div>
         <div class="card">
+        <a href=<?= base_url('/products?category=shipping-box'); ?>>
         <img data-src=<?= base_url('/static/categories/shipping-box.png'); ?> class="card-img-top lazyload" alt="...">
+        </a>
         <div class="card-body mt-4">
             <h5 class="card-title">كراتين الشحن</h5>
         </div>
         </div>
         <div class="card">
-        <img data-src=<?= base_url('/static/categories/hardcover.png'); ?> class="card-img-top lazyload" alt="...">
+        <a href=<?= base_url('/products?category=Hardcover'); ?>>
+        <img data-src=<?= base_url('/static/categories/Hardcover.png'); ?> class="card-img-top lazyload" alt="...">
+        </a>
         <div class="card-body mt-4">
             <h5 class="card-title">علب الهاردكفر</h5>
         </div>
         </div>
         <div class="card">
+        <a href=<?= base_url('/products?category=rollup'); ?>>
         <img data-src=<?= base_url('/static/categories/rollup.png'); ?> class="card-img-top lazyload" alt="...">
+        </a>
         <div class="card-body mt-4">
             <h5 class="card-title">رول اب</h5>
         </div>
         </div>
         <div class="card">
+        <a href=<?= base_url('/products?category=sticker'); ?>>
         <img data-src=<?= base_url('/static/categories/sticker.png'); ?> class="card-img-top lazyload" alt="...">
+        </a>
         <div class="card-body mt-4">
             <h5 class="card-title">ستيكرات</h5>
         </div>
         </div>
         <div class="card">
+        <a href=<?= base_url('/products?category=brochure'); ?>>
         <img data-src=<?= base_url('/static/categories/brochure.png'); ?> class="card-img-top lazyload" alt="...">
+        </a>
         <div class="card-body mt-4">
             <h5 class="card-title">بروشورات</h5>
         </div>
         </div>
         <div class="card">
+        <a href=<?= base_url('/products?category=books'); ?>>
         <img data-src=<?= base_url('/static/categories/books.png'); ?> class="card-img-top lazyload" alt="...">
+        </a>
         <div class="card-body mt-4">
             <h5 class="card-title">الكتب</h5>
         </div>
@@ -121,9 +137,133 @@
     </div>
 
     <div class="button-container">
-        <a href="<?=base_url("/products?category=bag")?>" class="btn btn-primary">جميع المنتجات</a>
+        <a href="<?=base_url("/products?category=all")?>" class="btn btn-primary">جميع المنتجات</a>
     </div>
 </div>
+
+
+
+
+<div class="iconspanel">
+    <div class="title pt-4">
+        <h1>ما يميزنا</h1>
+    </div>
+    <div class="row row-cols-2 row-cols-lg-4 features-container pt-4">
+        <div data-aos="fade-up" data-aos-delay="150" class="card-feature" style="width: 250px; margin-top: 2rem;">
+            <img src=<?= base_url('/static/svgs/usd.svg'); ?> alt="svg 1">
+            <h3>اسعار منافسة</h3>
+            <p>أسعارنا مناسبة لك دائماً، مع تقديم خصومات أكبر كلما زادت الكمية.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="card-feature" style="width: 250px; margin-top: 2rem; ">
+            <img src=<?= base_url('/static/svgs/truck.svg'); ?> alt="svg 2">
+            <h3>دقة مواعيد</h3>
+            <p>نحرص على الإنجاز السريع والدقيق لطلبك، مع الالتزام الكامل بالتسليم في الموعد المحدد</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="450" class="card-feature" style="width: 250px; margin-top: 2rem;">
+        <img src=<?= base_url('/static/svgs/box.svg'); ?> alt="svg 3">
+        <h3>الجودة</h3>
+        <p>نضمن لك توفير فريق يهتم بمنتجك ليظهر لك بأفضل صورة تنال إعجابك</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div data-aos="zoom-in-up" class="ourworkspanel" id="ourworks">
+    <div class="wrapper">
+        <div class="title pt-4">
+            <h1>أعمـــالنا</h1>
+            <p>نستعرض مشاريعنا المميزة في مجال الطباعة والتغليف، حيث تعكس تنوع وجودة أعمالنا احترافيتنا واهتمامنا بتلبية احتياجات عملائنا. كل مشروع يجسد رؤيتنا وابتكارنا في تقديم أفضل الحلول.</p>
+        </div>
+        <div class="ourworks_grid">
+            <ul class="left">
+                <li>
+                    <a href="<?= base_url('/static/our-works/1.jpg'); ?>" data-lightbox="our-works" data-title="Image 1">
+                        <img src="<?= base_url('/static/our-works/1.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/2.png'); ?>" data-lightbox="our-works" data-title="Image 2">
+                        <img src="<?= base_url('/static/our-works/2.png'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/3.jpg'); ?>" data-lightbox="our-works" data-title="Image 3">
+                        <img src="<?= base_url('/static/our-works/3.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li>
+                    <a href="<?= base_url('/static/our-works/4.jpg'); ?>" data-lightbox="our-works" data-title="Image 4">
+                        <img src="<?= base_url('/static/our-works/4.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/5.jpg'); ?>" data-lightbox="our-works" data-title="Image 5">
+                        <img src="<?= base_url('/static/our-works/5.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= base_url('/static/our-works/6.jpg'); ?>" data-lightbox="our-works" data-title="Image 6">
+                        <img src="<?= base_url('/static/our-works/6.jpg'); ?>" class="lazyload" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <a href="<?= base_url('/works'); ?>" class="btn btn-primary">جميع الاعمال</a>
+        </div>
+    </div>
+</div>
+
+
+<div data-aos="fade-down" class="partnerpanel">
+    <div class="title pt-4" style="text-align: center;">
+        <h1>شركاؤنا</h1>
+    </div>
+    <ul class="partners">
+    <?php
+    $partners = [];
+    for ($i = 1; $i <= 14; $i++) {
+        $partners[] = '/static/partners/' . $i . '.png';
+    }
+    ?>
+
+    <ul class="partners">
+        <?php foreach ($partners as $partner): ?>
+            <li><img data-src="<?= base_url($partner); ?>" class="lazyload" alt=""></li>
+        <?php endforeach; ?>
+    </ul>
+    </ul>
+</div>
+
+
+<div class="looppanel" data-aos="fade-down" >
+<div class="loop-video">
+    <video autoplay muted loop playsinline>
+        <source src=<?= base_url('/static/video/video-loop.mp4'); ?> type="video/mp4">
+    </video>
+</div>
+<div class="container-text">
+    <div class="rich-text">
+        <h1>من نحن؟</h1>
+        <h3>تأسست شركة ADMPP في عام 2001، وهي شركة رائدة ومتخصصة في مجال الطباعة والتغليف. توفر الشركة جزءًا مهمًا من متطلبات السوق الخليجي، وتقدم خدماتها المتميزة تحت شعار: الجودة العالية، السرعة الفائقة، تنافسية الأسعار، والإنجاز المستمر الذي لا يتوقف.</h3>
+        <div class="button-container">
+            <a href="<?= base_url('/quote'); ?>" class="btn btn-primary">اطلب الآن</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
 
 <div data-aos="fade-right" class="howpanel">
     <div class="title pt-4">
@@ -173,103 +313,6 @@
 
 
 
-<div class="iconspanel">
-    <div class="title pt-4">
-        <h1>أنت تستحق دائماً الأفضل مع مطابع أضواء</h1>
-        <p>نحن في أضواء نوفر لك.</p>
-    </div>
-    <div class="row row-cols-2 row-cols-lg-4 features-container pt-4">
-        <div data-aos="fade-up" data-aos-delay="150" class="card-feature" style="width: 250px; margin-top: 2rem;">
-            <img src=<?= base_url('/static/svgs/usd.svg'); ?> alt="svg 1">
-            <h3>أسعار مذهلة</h3>
-            <p>أسعارنا دائماً تناسبك، بخصومات عديدة عند الزيادة في القطع</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="300" class="card-feature" style="width: 250px; margin-top: 2rem; ">
-            <img src=<?= base_url('/static/svgs/truck.svg'); ?> alt="svg 2">
-            <h3>سرعة التوصيل</h3>
-            <p>عند اتمام طلبك سيكون علينا توصيله لك في الوقت المناسب توفيرا لجهدك ووقتك</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="450" class="card-feature" style="width: 250px; margin-top: 2rem;">
-        <img src=<?= base_url('/static/svgs/box.svg'); ?> alt="svg 3">
-        <h3>الجودة</h3>
-        <p>نضمن لك توفير فريق يهتم بمنتجك ليظهر لك بأفضل صورة تنال إعجابك</p>
-        </div>
-    </div>
-</div>
-
-
-
-
-<div class="looppanel" data-aos="fade-down" >
-<div class="loop-video">
-    <video autoplay muted loop playsinline>
-        <source src=<?= base_url('/static/video/video-loop.mp4'); ?> type="video/mp4">
-    </video>
-</div>
-<div class="container-text">
-    <div class="rich-text">
-        <h1>من نحن؟</h1>
-        <h3>وهي شركة متخصصة في مجال الطباعة والتغليف منذ عام 2001. كما توفر جزء من متطلبات ADMPP تأسست. السوق على المستوى الخليجي، و تقديمها تحت شعار الجودة والسرعة و تنافسية األسعار واإلنجاز اليقف واليزال مستمر.</h3>
-        <div class="button-container">
-            <a href="<?= base_url('/quote'); ?>" class="btn btn-primary">اطلب الآن</a>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-
-<div data-aos="zoom-in-up" class="ourworkspanel" id="ourworks">
-    <div class="wrapper">
-        <div class="title pt-4">
-            <h1>أعمـــالنا :</h1>
-            <p>كيف لك أن تكون تجربتك مع مطابع أضواء مختلفة؟ نحن في مطابع أضواء نحرص على توفير لك سهولة الاختيار، الأفكار الجذابة، الأسعار المناسبة، المتانة، والحفاظ على المنتج.</p>
-        </div>
-        <div class="ourworks_grid">
-            <ul class="left">
-                <li>
-                    <a href="<?= base_url('/static/our-works/1.jpg'); ?>" data-lightbox="our-works" data-title="Image 1">
-                        <img src="<?= base_url('/static/our-works/1.jpg'); ?>" class="lazyload" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= base_url('/static/our-works/2.png'); ?>" data-lightbox="our-works" data-title="Image 2">
-                        <img src="<?= base_url('/static/our-works/2.png'); ?>" class="lazyload" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= base_url('/static/our-works/3.jpg'); ?>" data-lightbox="our-works" data-title="Image 3">
-                        <img src="<?= base_url('/static/our-works/3.jpg'); ?>" class="lazyload" alt="">
-                    </a>
-                </li>
-            </ul>
-            <ul class="right">
-                <li>
-                    <a href="<?= base_url('/static/our-works/4.jpg'); ?>" data-lightbox="our-works" data-title="Image 4">
-                        <img src="<?= base_url('/static/our-works/4.jpg'); ?>" class="lazyload" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= base_url('/static/our-works/5.jpg'); ?>" data-lightbox="our-works" data-title="Image 5">
-                        <img src="<?= base_url('/static/our-works/5.jpg'); ?>" class="lazyload" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= base_url('/static/our-works/6.jpg'); ?>" data-lightbox="our-works" data-title="Image 6">
-                        <img src="<?= base_url('/static/our-works/6.jpg'); ?>" class="lazyload" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="button-container">
-            <a href="<?= base_url('/works'); ?>" class="btn btn-primary">جميع الاعمال</a>
-        </div>
-    </div>
-</div>
-
-
-
-
-
 <div class="richtextpanel">
 <div class="right-side-rich">
 
@@ -282,34 +325,17 @@
         <h1>أكثر من مجرد تغليف</h1>
     </div>
     <div class="title-text">
-        <p>تستحق منتجاتك أن تُقدم في صناديق مصنوعة من مواد مستدامة، تتميز بجودة طباعة ممتازة وتصميم مثالي. نحن نساعدك في ابتكار عبوات رائعة تتناسب مع جميع الاستخدامات، المجالات، والصناعات، لضمان تقديم تجربة استثنائية لمستلم المنتج.</p>
+        <p>منتجاتك تستحق أن تُقدَّم في عبوات أنيقة ومستدامة، مصنوعة من مواد صديقة للبيئة بجودة طباعة عالية وتصميم مميز. نبتكر مطبوعات مخصصة تلائم مختلف الاستخدامات، لتضمن تجربة استثنائية لكل عميل تعكس جودة منتجك واحترافيته.</p>
     </div>
     </div>
 
 </div>
 
-<div data-aos="fade-down" class="partnerpanel">
-    <div class="title pt-4" style="text-align: center;">
-        <h1>شركاؤنا</h1>
-    </div>
-    <ul class="partners">
-    <?php
-    $partners = [];
-    for ($i = 1; $i <= 12; $i++) {
-        $partners[] = '/static/partners/' . $i . '.png';
-    }
-    ?>
 
-    <ul class="partners">
-        <?php foreach ($partners as $partner): ?>
-            <li><img data-src="<?= base_url($partner); ?>" class="lazyload" alt=""></li>
-        <?php endforeach; ?>
-    </ul>
-    </ul>
-</div>
+
 <div data-aos="fade-up" class="faqpanel">
     <div class="questions-rich">
-        <h2>نعرف بأن كل سؤال مهم, لكن هذي الأسئلة هي الأكثر شيوعاً.</h2>
+        <h2>نعرف بأن كل سؤال مهم, لكن هذه الأسئلة هي الأكثر شيوعاً.</h2>
         <div class="button-container">
         <a href="<?= base_url("faq")?>" class="btn btn-primary">جميع الاسئلة</a>
         </div>
@@ -318,11 +344,11 @@
             <div class="accordion">
                     <div class="accordion-item" style="border-bottom: 1px solid #e5e5e5 !important;">
                         <button id="accordion-button" aria-expanded="false">
-                            <span class="accordion-title">ماهي اقل الكمية للطلب؟</span>
+                            <span class="accordion-title">ماهي أقل كمية للطلب؟</span>
                             <span class="icon" aria-hidden="true"></span>
                         </button>
                         <div class="accordion-content">
-                            <p>تبدا الكمية من  500 حبة .</p>
+                            <p>تبدأ الكمية من  500 حبة .</p>
                         </div>
                     </div>
                     <div class="accordion-item" style="border-bottom: 1px solid #e5e5e5 !important;">
@@ -349,8 +375,7 @@
                             <span class="icon" aria-hidden="true"></span>
                         </button>
                         <div class="accordion-content">
-                            <p>نعم متوفر ، التوصيل داخل الرياض متوفر ومجاني للعملاء
-                            اما خارج الرياض يكون عن طريق شركات الشحن يتم احتسابها التكلفة على العميل</p>
+                            <p>نعم، التوصيل متوفر. داخل الرياض، نقدم خدمة التوصيل المجاني للعملاء، أما خارج الرياض فيتم الشحن عبر شركات التوصيل، وتُضاف تكلفة الشحن على العميل.</p>
                         </div>
                     </div>
                     <div class="accordion-item" style="border-bottom: 1px solid #e5e5e5 !important;">
@@ -486,6 +511,8 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesToScroll: 1, // Number of cards to scroll at a time
       prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
       nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+      autoplay: true,
+      autoplaySpeed: 1000,
       responsive: [
         {
           breakpoint: 1024, // Below this breakpoint

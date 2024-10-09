@@ -8,6 +8,7 @@ use App\Controllers\Home;
 use App\Controllers\Quote; // Add this line
 use App\Controllers\Pages;
 use App\Controllers\ProductsController; // Add this line
+use App\Controllers\FileController; // Add this line
 
 /**
  * @var RouteCollection $routes
@@ -24,4 +25,6 @@ $routes->get('contact', [Contact::class, 'index']);
 
 $routes->post('quote/submit', [Quote::class, 'submit']);
 $routes->post('contact/submit', [Contact::class, 'submit']);
+$routes->get('internal/uploads/(:segment)', 'FileController::serve/$1');
+
 $routes->get('(:segment)', 'Pages::view/$1');

@@ -6,8 +6,7 @@
     </div>
 
     <!-- Footer section -->
-        <!-- Footer section -->
-        <footer class="footer mt-auto">
+    <footer class="footer mt-auto">
         <div class="follow-us">
             <p>تابع اضواء</p>          
             <div class="social-icons">

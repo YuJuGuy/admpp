@@ -35,7 +35,7 @@
                 {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
                 {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["أي فلوت", "بي فلوت"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "متلايز"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "متلايز"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -57,7 +57,7 @@
                 {"type": "button_select", "label": "نوع الورق", "name": "paper_type", "options": ["انفركوت", "كوشية", "ورق مخصوص"]},
                 {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["250 جرام", "300 جرام", "350 جرام"]},
                 {"type": "button_select", "label": "الحبل", "name": "rope_type", "options": ["حبل عادي", "حبل مجدول", "شريطة", "ريبون"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -78,7 +78,7 @@
                 {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
                 {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -97,7 +97,7 @@
                 {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
                 {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -117,7 +117,7 @@
                 {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
                 {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["200 جرام", "150 جرام", "170 جرام", "٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج", "متلايز"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -137,7 +137,7 @@
                 {"type": "button_select", "label": "السلوفان", "name": "lamination", "options": ["لامع", "مطفي", "بدون سلوفان"]},
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["وجه", "وجهين"]},
                 {"type": "button_select", "label": "السماكة", "name": "thickness", "options": ["200 جرام", "150 جرام", "170 جرام", "٢٥٠ جرام"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -158,7 +158,7 @@
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
                 {"type": "button_select", "label": "السماكة لورق الغلاف", "name": "cover_thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
                 {"type": "select", "label": "السماكة لورق الداخلي", "name": "inner_paper_thickness", "options": ["80 جرام", "90 جرام", "100 جرام", "115 جرام", "130 جرام", "150 جرام", "200 جرام كوشيه", "60 جرام اوفست", "70 جرام اوفست", "80 جرام اوفست", "100 جرام اوفست", "70 جرام بلكي", "80 جرام بلكي", "90 جرام بوندبيج"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -179,7 +179,7 @@
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["وجه", "وجهين"]},
                 {"type": "button_select", "label": "السماكة لورق الغلاف", "name": "cover_thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام"]},
                 {"type": "button_select", "label": "السماكة لورق الداخلي", "name": "inner_paper_thickness", "options": ["80 جرام", "90 جرام", "100 جرام", "115 جرام", "130 جرام"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -200,7 +200,7 @@
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
                 {"type": "button_select", "label": "السماكة لورق الغلاف", "name": "cover_thickness", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام"]},
                 {"type": "select", "label": "السماكة لورق الداخلي", "name": "inner_paper_thickness", "options": ["80 جرام", "90 جرام", "100 جرام", "115 جرام", "130 جرام"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "options": ["بصمة", "يوفي", "كفراج"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "optional": true}
             ]
@@ -235,7 +235,7 @@
                 {"type": "button_select", "label": "السلوفان", "name": "lamination", "id": "lamination-field", "options": ["لامع", "مطفي", "بدون سلوفان"]},
                 {"type": "button_select", "label": "اوجه السلوفان", "name": "lamination_faces", "id": "lamination-faces-field", "options": ["خارجي", "داخلي", "خارجي وداخلي"]},
                 {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["٢٥٠ جرام", "٣٠٠ جرام", "٣٥٠ جرام", "120", "100"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "id": "artistic-additions-field", "options": ["بصمة", "يوفي", "كفراج", "متلايز"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "id": "artistic-additions-field", "options": ["بصمة", "يوفي", "كفراج", "متلايز"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
             ]
@@ -253,7 +253,7 @@
                 {"type": "button_select", "label": "نوع الورق", "name": "paper_type", "id": "paper-type-field", "options": ["اوفست", "ورق مخصوص"]},
                 {"type": "button_select", "label": "اوجه الطباعة", "name": "printing_faces", "id": "printing-faces-field", "options": ["وجه", "وجهين"]},
                 {"type": "button_select", "label": "السماكة", "name": "thickness", "id": "thickness-field", "options": ["80 جرام", "100 جرام", "120 جرام"]},
-                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "id": "artistic-additions-field", "options": ["بصمة", "يوفي", "كفراج"]},
+                {"type": "button_select", "label": "إضافات فنية", "name": "artistic_additions", "id": "artistic-additions-field", "options": ["بصمة", "يوفي", "كفراج"], "multiple": "true"},
                 {"type": "textarea", "label": "كومنت", "name": "comment", "id": "comment-field"},
                 {"type": "file", "label": "ارفاق صورة لشكل المنتج", "name": "product_image", "id": "product-image-field", "optional": true}
             ]

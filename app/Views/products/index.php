@@ -29,7 +29,7 @@ $preferred_order = [
     'magazine', 
     'bag', 
     'letterhead', 
-    'hardcover', 
+    'Hardcover', 
     'cupholder', 
     'books', 
     'envelopes',
@@ -46,14 +46,14 @@ $category_names_in_arabic = [
     'envelopes' => 'الظروف',
     'vacuum' => 'الفاكيوم',
     'books' => 'الكتب',
-    'bag' => 'الاكياس',
+    'bag' => 'الأكياس',
     'brochure' => 'البروشورات',
     'paperbox' => 'علب ورقية',
     'butterpaper' => 'ورق الزبدة',
     'shipping-box' => 'كراتين الشحن',
     'cards' => 'كروت',
-    'cupholder' => 'حامل الاكواب',
-    'hardcover' => 'الهاردكوفر',
+    'cupholder' => 'حامل الأكواب',
+    'Hardcover' => 'الهاردكوفر',
     'letterhead' => 'ورق رسمي',
     'magazine' => 'المجلات',
     'rollup' => 'الرول اب',
@@ -64,7 +64,7 @@ $category_names_in_arabic = [
 
 <div class="sliderpanel">
     <div class="container py-4">
-        <div class="card-slider-6">
+        <div class="card-slider-6" >
         <!-- Category for "All Products" -->
             <div class="category-slick">
                 <div class="category-item" data-category="all" onclick="loadCategoryImages('all', this)">
@@ -128,6 +128,9 @@ $category_names_in_arabic = [
         
         </div> 
     </div>
+</div>
+<div class="button-container text-center mt-4">
+    <a href="https://wa.me/966562243082" target="_blank" class="btn btn-primary">اطلب الآن</a>
 </div>
 
 <div class="container">
@@ -235,6 +238,8 @@ window.onload = function() {
       infinite: true,
       slidesToShow: 6,// Number of cards to show
       rows: 2,
+      autoplay: true,
+      autoplaySpeed: 1000,
     // check if phone make it row 1 if pc make it 2
 
 

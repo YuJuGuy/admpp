@@ -38,7 +38,7 @@
                 $chunk_counter++;
                 if ($chunk_counter % 3 == 0) {
                     echo '<div class="button-container text-center mt-4">';
-                    echo '<a href="' . base_url('/quote') . '" class="btn btn-primary">اطلب الآن</a>';
+                    echo '<a href="https://wa.me/966562243082" target="_blank" class="btn btn-primary">اطلب الآن</a>';
                     echo '</div>';
                 }
             }
